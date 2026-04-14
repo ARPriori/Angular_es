@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "1b7ef724-4a56-47f8-a5b0-08aaa08c0862"
+    "analytics": "17574092-f930-457a-bf10-9826eb1162ee"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "hero-project": {
+    "dish-project": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -19,7 +19,7 @@
           "options": {
             "browser": "src/main.ts",
             "index": "src/index.html",
-            "outputPath": "dist/hero-project",
+            "outputPath": "dist/dish-project",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hero-project:build:production"
+              "buildTarget": "dish-project:build:production"
             },
             "development": {
-              "buildTarget": "hero-project:build:development"
+              "buildTarget": "dish-project:build:development"
             }
           },
           "defaultConfiguration": "development"

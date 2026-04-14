@@ -1,0 +1,10 @@
+<h2>Ristorante "Angular Gourmet"</h2>
+<div class="menu-list">
+<app-dish-item
+*ngFor="let p of piatti"
+[piatto]="p"
+(cambioQuantita)="aggiornaOrdine($event, p)">
+</app-dish-item>
+</div>
+<hr>
+<h3>Totale Conto: {{ totale }}€</h3>

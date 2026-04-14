@@ -1,0 +1,9 @@
+<div class="dish-row">
+<span>{{ piatto.nome }} - {{ piatto.prezzo }}€</span>
+<div class="controls">
+<button (click)="modifica(-1)" [disabled]="piatto.quantita <= 0">-
+</button>
+<span class="qty">{{ piatto.quantita }}</span>
+<button (click)="modifica(1)">+</button>
+</div>
+</div>
