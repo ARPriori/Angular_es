@@ -1,0 +1,8 @@
+<h1>Edit Hero</h1>
+
+<input [(ngModel)]="newHero.nome" name="nome" placeholder="Nome" />
+<input [(ngModel)]="newHero.potere" name="potere" placeholder="Potere" />
+
+<button (click)="addHero()">Add Hero</button>
+
+{{newHero | json}}

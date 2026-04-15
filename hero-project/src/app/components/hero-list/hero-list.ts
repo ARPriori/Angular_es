@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Hero } from '../../models/hero.model';
 import { HeroCard } from '../hero-card/hero-card';
+import { HeroEdit } from '../hero-edit/hero-edit';
 
 @Component({
   selector: 'app-hero-list',
-  imports: [CommonModule, HeroCard],
+  imports: [CommonModule, HeroCard, HeroEdit],
   templateUrl: './hero-list.html',
   styleUrl: './hero-list.css',
 })
@@ -23,5 +24,9 @@ export class HeroList {
   markAsDone(hero : Hero) {
     this.totalCompleted++;
     hero.completata = true;
+  }
+
+  addNewHero(newHero: Hero) {
+    this.heroes.push(newHero);
   }
 }
